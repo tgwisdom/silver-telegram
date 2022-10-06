@@ -5,7 +5,7 @@ solo CRUD operation
   <li>nodemon</li>
   <li>morgan</li>
   <li>mongoose</li>
-  <li>express></li>
+  <li>express</li>
   <li>ejs</li>
   <li>dotenv</li>
   <li>body-parser</li>
