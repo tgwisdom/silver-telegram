@@ -10,4 +10,7 @@ solo CRUD operation
   <li>dotenv</li>
   <li>body-parser</li>
   <li>axios</li>
-  
+  <p> We will use a MVC project structure for this application</p>
+  <p></p>
+  <p></p>
+  <p>I used morgan to create server response logs.</p>
