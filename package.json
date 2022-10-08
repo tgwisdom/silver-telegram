@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/tgwisdom/silver-telegram#readme",
   "dependencies": {
-    "axios": "^1.0.0",
+    "axios": "^1.1.2",
     "body-parser": "^1.20.0",
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",

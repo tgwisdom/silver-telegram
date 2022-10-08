@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 8080
 //log requests
 app.use(morgan('tiny'));
 
-// mongodb connect function   THIS IS WHAT IS FUCKING THIS UP
+// mongodb connect function   THIS IS WHAT IS MESSING THIS UP
 connectDB();
 
 //parse request to body-parser
