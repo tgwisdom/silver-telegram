@@ -14,7 +14,7 @@ $("#update_user").submit(function(event){
 
 
     var request = {
-        "url" : `http://127.0.0.1:3000/api/users/${data.id}`,   // test for heroku
+        "url" : `http://localhost:3000/api/users/${data.id}`,
         "method" : "PUT",
         "data" : data
     }
@@ -31,7 +31,7 @@ if(window.location.pathname == "/"){      // this section uses a delete method r
         var id = $(this).attr("data-id")
 
         var request = {
-            "url" : `http://127.0.0.1:3000/api/users/${id}`,   // test for heroku
+            "url" : `http://localhost:3000/api/users/${id}`,
             "method" : "DELETE"
         }
 
