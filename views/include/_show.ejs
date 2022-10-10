@@ -7,10 +7,10 @@
         <td><%= users[i].sucks %></td>
         <td><%= users[i].status %></td>
         <td>
-            <a href="/update_user?id=<%= users[i]._id%>" class="btn border-shadow update">
-                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+            <a href="/update-user?id=<%= users[i]._id%>" class="btn border-shadow update"> <!--will identify user by id-->
+                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span> 
             </a>
-            <a class="btn border-shadow delete" data-id=<%= users[i]._id%> >
+            <a class="btn border-shadow delete" data-id=<%= users[i]._id%> > <!--same thing to delete by id-->
                 <span class="text-gradient"><i class="fas fa-times"></i></span>
             </a>
         </td>

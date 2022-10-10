@@ -1,17 +1,18 @@
+//require("dotenv").config();
 const { request } = require("express");
 const express = require("express");
 //call dotenv module
 const dotenv = require('dotenv');
 const morgan = require('morgan');
 const bodyparser = require("body-parser");
-const path = require('path');
+const path = require('node:path');  // changed from path to node:path to test
 
 // call the connectDB export
 const connectDB = require('./server/database/connection');
 
 const app = express();
 
-dotenv.config({path: 'config.env'});
+dotenv.config({path: 'config.env'});  // UGH not sure how to not use this :(((
 // const for port 
 //const { PORT = 3000 } = process.env;
 const PORT = process.env.PORT || 8080

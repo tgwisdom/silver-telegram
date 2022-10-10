@@ -5,7 +5,7 @@ $("#add_user").submit(function(event){
 $("#update_user").submit(function(event){
     event.preventDefault();
 
-    var unindexed_array = $(this).serializeArray();
+    var unindexed_array = $(this).serializeArray(); // passes all the info to an array 
     var data = {}
 
     $.map(unindexed_array, function(n, i){
@@ -25,8 +25,8 @@ $("#update_user").submit(function(event){
 
 })
 
-if(window.location.pathname == "/"){
-    $ondelete = $(".table tbody td a.delete");
+if(window.location.pathname == "/"){      // this section uses a delete method request through ajax
+    $ondelete = $(".table tbody td a.delete"); // this locates the anchor tag where we grabbed the ID
     $ondelete.click(function(){
         var id = $(this).attr("data-id")
 

@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
-// create Schema for userdb
+// create Schema for userdb in mongodb
 var schema = new mongoose.Schema({
-    name : {
+    name :{
         type : String,
         required: true
     },
-    email : {
+    email :{
         type: String,
         required: true,
         unique: true

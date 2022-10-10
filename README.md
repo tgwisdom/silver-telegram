@@ -19,3 +19,7 @@ solo CRUD operation
   <p> This will assist me in setting up structure for future projects</p>
   <p></p>
   <p>I used morgan to create server response logs.</p>
+  <p> Mongoose is a Node.js-based Object Data Modeling (ODM) library for MongoDB.</p>
+  <p></p>
+  <p> I used Postman to check POST, GET, PUT, DELETE api calls to mongodb. You can download postman <a href = "https://www.postman.com/downloads/" target="_blank"> HERE</a></p>
+  <p> npm start to run.
