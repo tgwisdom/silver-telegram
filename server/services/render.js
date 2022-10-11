@@ -5,7 +5,7 @@ const axios = require('axios');
 
 exports.homeRoutes = (req, res) => {
     // Make a get request to /api/users
-    axios.get('http://localhost:3000/api/users')
+    axios.get('http://dev-quebec.herokuapp.com/api/users')
         .then(function(response){    // get the promise from then method
             res.render('index', { users : response.data });
         })
@@ -21,7 +21,7 @@ exports.add_user = (req, res) =>{
 }
 // allows edit of user info
 exports.update_user = (req, res) =>{
-    axios.get('http://localhost:3000/api/users', { params : { id : req.query.id }}) // finds the user selected by id
+    axios.get('http://dev-quebec.herokuapp.com/api/users', { params : { id : req.query.id }}) // finds the user selected by id
         .then(function(userdata){
             res.render("update_user", { user : userdata.data})   // populates form with that specific user for edit
         })                                                       //from update_user.ejs
